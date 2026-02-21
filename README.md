@@ -4,7 +4,7 @@ This pipeline allows assessing difference in the read depth (DP) between transit
 
 ## 1. Data Extraction (Bash)
 
-The data extraction part is represented by a script workflow.sh. To execute the script use: \
+The data extraction part is represented by a script _workflow.sh_. To execute the script use: \
 `./workflow.sh`
 
 ### Workflow.sh
@@ -33,3 +33,4 @@ The intermediate files _dp.tsv_ and _mutation_type.tsv_ are deleted.
 
 
 ## 2. Data Analysis (R)
+The data analysis part is represented by a script _Rscript.R_.
