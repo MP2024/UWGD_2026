@@ -20,7 +20,7 @@ The filename and point mutation types (transition, transversion) are defined wit
 Using functions grep and awk, the DP data from individual entries (lines) are extracted into the dp.tsv file. The awk code (using functions match and substr) was based on [Mark Needham's blog post](https://www.markhneedham.com/blog/2013/06/26/unixawk-extracting-substring-using-a-regular-expression-with-capture-groups/). 
 
 #### 3. Mutation type extraction
-Using functions grep and awk, the mutation type data were extracted into the mutation_type.tsv file. There are four possible outputs for each entry – transition, transversion, NA1 (indels or locī) or NA2 (undefined single-nucleotide exchange, should not exist in our data)
+Using functions grep and awk, the mutation type data were extracted into the mutation_type.tsv file. There are four possible outputs for each entry – transition, transversion, NA1 (indels or locī with more possible mutations, since those could be both transitions and transversion and the DP is given for the locus, such locī were omitted from the analysis) or NA2 (undefined single-nucleotide exchange, should not exist in our data)
 
 #### 4. Final Check
 
