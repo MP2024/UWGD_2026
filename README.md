@@ -14,7 +14,7 @@ This script takes a vcf file as an input and produces a tsv file with two column
 The filename and point mutation types (transition, transversion) are defined within this section.
 
 > [!NOTE]
-> luscinia_vars.vcf.gz file in the folder data is set as the default input. 
+> _luscinia_vars.vcf.gz_ file in the folder _data_ is set as the default input. 
 
 #### 2. DP Extraction
 
