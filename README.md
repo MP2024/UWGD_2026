@@ -14,10 +14,10 @@ This script takes a vcf file as an input and produces a tsv file with two column
 The filename and point mutation types (transition, transversion) are defined within this section.
 
 > [!NOTE]
-> The _luscinia_vars.vcf.gz_ file in the folder _data_ is set as the default input. 
+> The _luscinia_vars.vcf.gz_ file in the folder _data_ is set as the default input.
 
 #### 2. DP Extraction
-
+Using functions grep and awk, the DP data from individual entries (lines) are extracted into dp.tsv file. The awk code was based on [Mark Needham's blog post](https://www.markhneedham.com/blog/2013/06/26/unixawk-extracting-substring-using-a-regular-expression-with-capture-groups/) 
 
 #### 3. Mutation type extraction
 
