@@ -53,3 +53,6 @@ This section uploads data from _combined.tsv_ as a dataframe _d_.
 This section creates the boxplot and saves it as _DPplot.png_.
 
 
+## Results
+If one preforms the analysis on the _luscinia_vars.vcf.gz_, they get these boxplots:
+/DPplot.png
