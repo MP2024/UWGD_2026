@@ -7,6 +7,7 @@ This pipeline allows assessing difference in the read depth (DP) between transit
 The data extraction part is represented by a script workflow.sh. To execute the script use: \
 `./workflow.sh`
 
-
+### Workflow.sh
+This script takes a vcf file as an input and produces a tsv file with two columns---DP and mutation type---as its output.
 
 ## 2. Data Analysis (R)
