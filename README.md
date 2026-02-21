@@ -54,6 +54,6 @@ This section creates the boxplot and saves it as _DPplot.png_.
 
 
 ## Results
-If one preforms the analysis on the _luscinia_vars.vcf.gz_, they get these boxplots:
+If one preforms the analysis on the _luscinia_vars.vcf.gz_, they get such boxplots showing slightly higher expected DP for transitions than tranversions):
 
 ![Picture](./DPplot.png)
