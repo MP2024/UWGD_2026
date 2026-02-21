@@ -1,6 +1,6 @@
 # Task 8. Read depth (DP) by Transitions and Transversions 
 
-This pipeline allows assessing difference in the read depth (DP) between transitions and transversions. The pipeline comprises of two parts—data extraction (produces a tsv file with two columns – DP and info about mutation type: transition/transversion) and data analysis (creates a plot showing how is the DP distributed within the mutation types.
+This pipeline allows assessing difference in the read depth (DP) between transitions and transversions. The pipeline comprises of two parts: data extraction (produces a tsv file with two columns&mdash;DP and info about mutation type: transition/transversion) and data analysis (creates a plot showing how is the DP distributed within the mutation types.
 
 ## 1. Data Extraction (Bash)
 
