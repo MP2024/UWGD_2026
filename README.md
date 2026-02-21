@@ -5,10 +5,13 @@ This pipeline allows assessing difference in the read depth (DP) between transit
 ## 1. Data Extraction (Bash)
 
 The data extraction part is represented by a script _workflow.sh_. To execute the script use: \
-`./workflow.sh`
+```
+chmod +x workflow.sh
+./workflow.sh
+```
 
 ### Workflow.sh
-This script takes a vcf file as an input and produces a tsv file with two columns&mdash;DP and mutation type&mdash;as its output. During this process, several thing are done with the original vcf folder:
+This script takes a vcf file as an input and produces a tsv file with two columns&mdash;DP and mutation type&mdash;as its output. During this process, several things are done with the original vcf folder:
 
 #### 1. Variables Definition
 The filename and point mutation types (transition, transversion) are defined within this section.
@@ -41,5 +44,12 @@ This runs the script _Rscript.R_
 If Rscript is not loaded on the machine, one may engage in using online RStudio (either [NGS Course RStudio Server]{https://ngs-course.behavio.dev/} or run own at [Posit Cloud]{https://ngs-course.behavio.dev/}) and perform the _Rscript.R_ there.
 
 ### Rscript.R
-This script takes the _combined.tsv_ file and creates a _DPplot.png_ file with boxplots (log y axis) showing the differences in DP between trnsitions and transversions.
+This script takes the _combined.tsv_ file and creates a _DPplot.png_ file with boxplots (log y axis) showing the differences in DP between trnsitions and transversions. It is comprised of two section:
+
+#### 1. Uploading a Dataframe
+This section uploads data from _combined.tsv_ as a dataframe _d_.
+
+#### 2. Plotting
+This section creates the boxplot and saves it as _DPplot.png_.
+
 
