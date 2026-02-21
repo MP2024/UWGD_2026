@@ -8,6 +8,6 @@ The data extraction part is represented by a script workflow.sh. To execute the 
 `./workflow.sh`
 
 ### Workflow.sh
-This script takes a vcf file as an input and produces a tsv file with two columns&mdash;DP and mutation type---as its output.
+This script takes a vcf file as an input and produces a tsv file with two columns&mdash;DP and mutation type&mdash;as its output.
 
 ## 2. Data Analysis (R)
