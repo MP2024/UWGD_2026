@@ -40,3 +40,6 @@ This runs the script _Rscript.R_
 
 If Rscript is not loaded on the machine, one may engage in using online RStudio (either [NGS Course RStudio Server]{https://ngs-course.behavio.dev/} or run own at [Posit Cloud]{https://ngs-course.behavio.dev/}) and perform the _Rscript.R_ there.
 
+### Rscript.R
+This script takes the _combined.tsv_ file and creates a _DPplot.png_ file with boxplots (log y axis) showing the differences in DP between trnsitions and transversions.
+
