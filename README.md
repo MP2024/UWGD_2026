@@ -1,4 +1,4 @@
-# Task 7. PHRED quality by transitions and transversions 
+# Task 7. PHRED Quality by Transitions and Transversions 
 
 ## 1. Data Extraction (Bash)
 
