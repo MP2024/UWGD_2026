@@ -17,19 +17,19 @@ The filename and point mutation types (transition, transversion) are defined wit
 > The _luscinia_vars.vcf.gz_ file in the folder _data_ is set as the default input.
 
 #### 2. DP Extraction
-Using functions grep and awk, the DP data from individual entries (lines) are extracted into the dp.tsv file. The awk code (using functions match and substr) was based on [Mark Needham's blog post](https://www.markhneedham.com/blog/2013/06/26/unixawk-extracting-substring-using-a-regular-expression-with-capture-groups/). If DP is not defined for an entry, `NA` is listed on its line.
+Using functions grep and awk, the DP data from individual entries (lines) are extracted into the _dp.tsv_ file. The awk code (using functions match and substr) was based on [Mark Needham's blog post](https://www.markhneedham.com/blog/2013/06/26/unixawk-extracting-substring-using-a-regular-expression-with-capture-groups/). If DP is not defined for an entry, `NA` is listed on its line.
 
 #### 3. Mutation type extraction
-Using functions grep and awk, the mutation type data were extracted into the mutation_type.tsv file. There are four possible outputs for each entry – transition, transversion, NA1 (indels or locī with more possible mutations, since those could be both transitions and transversion and the DP is given for the locus, such locī were omitted from the analysis) or NA2 (undefined single-nucleotide exchange, should not exist in our data). The if condition structure was created with help of Google Gemini.
+Using functions grep and awk, the mutation type data were extracted into the _mutation_type.tsv_ file. There are four possible outputs for each entry – transition, transversion, `NA1` (indels or locī with more possible mutations, since those could be both transitions and transversion and the DP is given for the locus, such locī were omitted from the analysis) or `NA2` (undefined single-nucleotide exchange, should not exist in our data). The if condition structure was created with help of Google Gemini.
 
 #### 4. Final Check
-Using function wc -l and, echo and exit, the script checks if its previous sections worked and if the two tsv files (dp.tsv and mutation_type.tsv) have same amount of entries. If not, the process is terminated.
+Using function wc -l and, echo and exit, the script checks if its previous sections worked and if the two tsv files (_dp.tsv_ and _mutation_type.tsv_) have same amount of entries. If not, the process is terminated.
 
 #### 5. Merging the DP and mutation type data
-Using functions paste and grep, only the lines containing defined DP and of entries composed of a single transition/transversion are taken and exported as a file combined.tsv.
+Using functions paste and grep, only the lines containing defined DP and of entries composed of a single transition/transversion are taken and exported as a file _combined.tsv_.
 
 #### 6. Removing the DP and mutation type tsv files
-The intermediate files dp.tsv and mutation_type.tsv are deleted. 
+The intermediate files _dp.tsv_ and _mutation_type.tsv_ are deleted. 
 
 
 ## 2. Data Analysis (R)
